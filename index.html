@@ -9,104 +9,191 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Helvetica, Arial, sans-serif;
     color: #1a1a1a; background: #ffffff;
   }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 90px; }
   h1 { font-size: 1.9rem; margin: 0 0 4px; }
-  h2 { font-size: 1.25rem; margin: 2em 0 0.5em; }
-  .updated { color: #666; font-size: 0.9rem; margin-bottom: 2em; }
+  h2 { font-size: 1.2rem; margin: 2em 0 0.5em; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5em; }
   ul { padding-left: 1.2em; }
   li { margin: 0.4em 0; }
-  a { color: #2563eb; }
-  code {
-    background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 4px;
-    font-size: 0.9em;
-  }
+  a { color: #2563eb; word-break: break-word; }
   strong { font-weight: 600; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 0.5em 0; font-size: 0.95rem; }
+  th, td { border: 1px solid rgba(0,0,0,0.12); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(0,0,0,0.04); font-weight: 600; }
   footer { margin-top: 3em; color: #666; font-size: 0.9rem; }
   @media (prefers-color-scheme: dark) {
     body { color: #e6e6e6; background: #101418; }
-    .updated, footer { color: #9aa4ad; }
+    .meta, footer { color: #9aa4ad; }
     a { color: #6ea8fe; }
-    code { background: rgba(255,255,255,0.1); }
+    th, td { border-color: rgba(255,255,255,0.16); }
+    th { background: rgba(255,255,255,0.06); }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Sleek — Privacy Policy</h1>
-  <p class="updated">Last updated: 15 July 2026</p>
+  <p class="meta">Effective date: 15 July 2026 &middot; Last updated: 15 July 2026</p>
 
-  <p>This policy explains what data the Sleek game (&ldquo;we&rdquo;,
-  &ldquo;the app&rdquo;) collects, why, and how you can control it.</p>
+  <p>This Privacy Policy explains how <strong>Udobiz Associated LTD</strong>
+  (&ldquo;Udobiz&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) collects, uses,
+  shares, and protects information in connection with the <strong>Sleek</strong>
+  mobile game (the &ldquo;App&rdquo;, package <code>com.Kosy.Sleek</code>). By
+  downloading or using the App, you agree to this Policy.</p>
+  <p><strong>Data controller:</strong> Udobiz Associated LTD (United States).<br>
+  <strong>Contact:</strong> <a href="mailto:kosynom@gmail.com">kosynom@gmail.com</a>.</p>
 
-  <h2>What we collect</h2>
+  <h2>1. Summary</h2>
+  <p>Sleek is an anonymous arcade game. We do <strong>not</strong> ask for your
+  name, email, phone number, or account sign-up, and there is <strong>no
+  user-generated content</strong> — leaderboard names are auto-assigned from a
+  fixed word list. We collect a limited set of data to run the game, show ads,
+  understand usage, and fix bugs, as described below. We do <strong>not sell
+  your personal information.</strong></p>
+
+  <h2>2. Information we collect</h2>
+  <p>We collect the following, automatically, through the App and the
+  third-party SDKs it uses:</p>
+  <div class="tablewrap"><table>
+    <tr><th>Data</th><th>Source</th><th>Why</th></tr>
+    <tr><td><strong>Advertising identifier</strong> (Android Advertising ID / iOS IDFA)</td><td>Google AdMob</td><td>Show ads and measure ad performance</td></tr>
+    <tr><td><strong>Approximate location</strong> (from IP address; not GPS)</td><td>AdMob, Firebase Analytics</td><td>Ad delivery and coarse regional analytics</td></tr>
+    <tr><td><strong>Anonymous user ID</strong></td><td>Firebase Anonymous Authentication</td><td>Associate leaderboard entries and settings with your install — not linked to any real-world identity</td></tr>
+    <tr><td><strong>App-activity / usage events</strong> (level start/complete, ad viewed, purchase made)</td><td>Firebase Analytics</td><td>Understand and improve the game</td></tr>
+    <tr><td><strong>Purchase history</strong> (which coin bundle was bought)</td><td>In-app purchase + Firebase Analytics</td><td>Deliver purchases and prevent duplicate credits</td></tr>
+    <tr><td><strong>Crash data</strong></td><td>Firebase Crashlytics</td><td>Diagnose and fix crashes</td></tr>
+    <tr><td><strong>Performance data</strong> (e.g. load times)</td><td>Firebase Performance Monitoring</td><td>Diagnose and improve performance</td></tr>
+    <tr><td><strong>Leaderboard display name</strong> (auto-generated name + a short slice of your anonymous ID)</td><td>Generated on-device</td><td>Show scores on public leaderboards</td></tr>
+  </table></div>
+  <p>We do <strong>not</strong> collect your name, email address (unless you
+  email us), phone number, contacts, precise/GPS location, photos, messages, or
+  health data.</p>
+
+  <h2>3. How we use information and our legal bases</h2>
+  <p>We use the information above to operate, maintain, and improve the App; to
+  serve and measure advertising; to process in-app purchases; and to detect,
+  diagnose, and fix problems.</p>
+  <p>For users in the European Economic Area, the United Kingdom, and
+  Switzerland, our legal bases under the GDPR/UK GDPR are:</p>
   <ul>
-    <li><strong>Advertising identifier</strong> — via Google AdMob, to show
-    ads and measure ad performance. Personalised ads are used only where you
-    have consented (see <em>Your choices</em> below).</li>
-    <li><strong>Approximate (IP-derived) location</strong> — used by AdMob and
-    analytics for ad delivery and coarse regional metrics. We do
-    <strong>not</strong> collect GPS location.</li>
-    <li><strong>An anonymous account identifier</strong> — Firebase Anonymous
-    Authentication assigns a random ID to your install so your leaderboard
-    entries and settings can be associated with you. It is
-    <strong>not</strong> linked to your name, email, or any real-world
-    identity.</li>
-    <li><strong>Gameplay analytics</strong> — via Firebase Analytics: events
-    such as level starts/completions, ad views, and purchases, to understand
-    and improve the game.</li>
-    <li><strong>Crash &amp; performance diagnostics</strong> — via Firebase
-    Crashlytics and Performance Monitoring, to find and fix bugs.</li>
-    <li><strong>Purchase history</strong> — records of in-app coin-bundle
-    purchases, to deliver what you bought and to prevent duplicate
-    credits.</li>
-    <li><strong>Leaderboard display name</strong> — an
-    <strong>auto-generated</strong> name (e.g. &ldquo;Swift Falcon&rdquo;)
-    plus a short slice of your anonymous ID. There is <strong>no free-text
-    name entry</strong>, so no personal information is shown on
-    leaderboards.</li>
-  </ul>
-  <p>We do <strong>not</strong> collect your name, email address, phone
-  number, contacts, or precise location, and we do <strong>not</strong> send
-  push notifications or sell your data.</p>
-
-  <h2>Third parties</h2>
-  <p>The app uses Google services (AdMob, Firebase Analytics, Crashlytics,
-  Performance Monitoring, Cloud Firestore). Their handling of data is governed
-  by <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy
-  Policy</a>. Ads are served by Google and its partner networks.</p>
-
-  <h2>Your choices</h2>
-  <ul>
-    <li><strong>EU/UK/Swiss users</strong>: on first launch you are shown a
-    Google-certified consent form (UMP) to accept or decline personalised ads.
-    You can change this any time via <strong>Settings &rarr; Privacy
-    options</strong>.</li>
-    <li><strong>iOS users</strong>: iOS asks for App Tracking Transparency
-    permission; you can change it in the system Settings for the app.</li>
-    <li><strong>Delete your data</strong>: <strong>Settings &rarr; Delete my
-    data</strong> erases your local save and removes your leaderboard entries
-    and account records. You may also request deletion by emailing the address
-    below.</li>
+    <li><strong>Consent</strong> — for personalised advertising and the
+    associated advertising identifier and analytics (via the in-app consent
+    prompt in Section 5). You may withdraw consent at any time.</li>
+    <li><strong>Legitimate interests</strong> — for non-personalised analytics,
+    crash and performance diagnostics, and protecting the App from abuse.</li>
+    <li><strong>Performance of a contract</strong> — for processing your in-app
+    purchases.</li>
   </ul>
 
-  <h2>Children</h2>
-  <p>The app is intended for players <strong>13 and older</strong> and is not
-  directed to children under 13. We do not knowingly collect data from
-  children under 13.</p>
+  <h2>4. How information is shared</h2>
+  <ul>
+    <li><strong>Google.</strong> The App uses Google's SDKs, which process data
+    on our behalf and, for advertising, as independent parties: Google AdMob
+    (advertising — the advertising identifier and approximate location may be
+    shared with Google and its advertising partners to serve and measure ads);
+    and Firebase Analytics, Crashlytics, Performance Monitoring,
+    Authentication, and Cloud Firestore (backend, analytics, diagnostics).
+    Google's handling of this data is governed by
+    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+    and, for advertising,
+    <a href="https://policies.google.com/technologies/partner-sites">Google's partner-sites terms</a>.</li>
+    <li><strong>Other players.</strong> Your auto-generated leaderboard display
+    name and score are publicly visible on in-app leaderboards. No personal
+    information is included.</li>
+    <li><strong>Legal reasons.</strong> We may disclose information if required
+    by law or to protect rights, safety, or the integrity of the App.</li>
+  </ul>
+  <p>We do <strong>not</strong> sell your personal information, and we do
+  <strong>not</strong> share it for purposes other than those described here.</p>
 
-  <h2>Data retention</h2>
-  <p>Leaderboard entries and your anonymous account persist until you delete
-  your data (Settings &rarr; Delete my data) or request deletion.</p>
+  <h2>5. Advertising and your choices</h2>
+  <ul>
+    <li><strong>EEA / UK / Switzerland:</strong> on first launch the App shows a
+    Google-certified consent form (Google User Messaging Platform) so you can
+    accept or decline personalised ads. Change your choice any time via
+    <strong>Settings &rarr; Privacy options</strong> in the App.</li>
+    <li><strong>iOS:</strong> Apple's App Tracking Transparency prompt asks
+    whether the App may track you. Change it in iOS <strong>Settings &rarr;
+    Privacy &amp; Security &rarr; Tracking</strong>.</li>
+    <li><strong>Android:</strong> you can reset or delete your advertising ID,
+    or opt out of ad personalisation, in Android <strong>Settings &rarr; Privacy
+    &rarr; Ads</strong>.</li>
+  </ul>
 
-  <h2>Contact</h2>
-  <p>Questions or deletion requests:
+  <h2>6. International data transfers</h2>
+  <p>Udobiz is based in the United States, and Google processes data in the
+  United States and other countries. Where data is transferred out of the
+  EEA/UK, it is protected by appropriate safeguards (such as the EU Standard
+  Contractual Clauses used by Google). By using the App you understand that
+  your information may be processed in countries other than your own.</p>
+
+  <h2>7. Data retention</h2>
+  <ul>
+    <li><strong>Advertising, analytics, crash, and performance data</strong> are
+    retained by Google for the periods described in Google's documentation and
+    settings.</li>
+    <li><strong>Your anonymous account and leaderboard entries</strong> persist
+    until you delete your data (Section 8) or request deletion.</li>
+  </ul>
+
+  <h2>8. Your privacy rights</h2>
+  <p><strong>Delete your data at any time:</strong> in the App, go to
+  <strong>Settings &rarr; Delete my data</strong>. This erases your local save
+  and removes your leaderboard entries, analytics identifier, and anonymous
+  account. You may also request deletion by emailing
   <a href="mailto:kosynom@gmail.com">kosynom@gmail.com</a>.</p>
+  <p><strong>EEA / UK / Switzerland (GDPR/UK GDPR).</strong> You have the right
+  to access, rectify, erase, restrict, or object to processing of your personal
+  data, to data portability, and to withdraw consent. You also have the right
+  to lodge a complaint with your local data protection authority.</p>
+  <p><strong>United States (including California / CPRA and other state
+  laws).</strong> We do <strong>not</strong> sell your personal information. We
+  do <strong>share</strong> the advertising identifier and approximate location
+  with advertising partners for cross-context behavioural (personalised)
+  advertising; you can opt out using the ad choices in Section 5. California
+  residents may request access to, or deletion of, their information and may
+  exercise these rights without discrimination.</p>
+  <p>To exercise any right, contact
+  <a href="mailto:kosynom@gmail.com">kosynom@gmail.com</a>. We may need to take
+  reasonable steps to verify a request.</p>
 
-  <footer>Sleek &middot; com.Kosy.Sleek</footer>
+  <h2>9. Children's privacy</h2>
+  <p>The App is intended for players <strong>13 years of age and older</strong>
+  and is not directed to children under 13. We do not knowingly collect
+  personal information from children under 13. If you believe a child under 13
+  has provided us information, contact
+  <a href="mailto:kosynom@gmail.com">kosynom@gmail.com</a> and we will delete
+  it.</p>
+
+  <h2>10. Data security</h2>
+  <p>Data transmitted between the App and our service providers is
+  <strong>encrypted in transit</strong> (HTTPS/TLS). No method of transmission
+  or storage is completely secure, but we take reasonable measures to protect
+  your information.</p>
+
+  <h2>11. Third-party links and services</h2>
+  <p>The App relies on the Google services listed in Section 4. Those services
+  are governed by their own privacy policies. We are not responsible for the
+  privacy practices of third parties.</p>
+
+  <h2>12. Changes to this Policy</h2>
+  <p>We may update this Policy from time to time. Material changes will be
+  reflected by updating the &ldquo;Effective date&rdquo; above and, where
+  appropriate, through an in-app notice. Continued use of the App after an
+  update constitutes acceptance of the revised Policy.</p>
+
+  <h2>13. Contact</h2>
+  <p>Udobiz Associated LTD<br>
+  Email: <a href="mailto:kosynom@gmail.com">kosynom@gmail.com</a></p>
+  <p>If you are in the EEA/UK and are not satisfied with our response, you may
+  contact your local data protection supervisory authority.</p>
+
+  <footer>Sleek &middot; com.Kosy.Sleek &middot; &copy; Udobiz Associated LTD</footer>
 </div>
 </body>
 </html>
